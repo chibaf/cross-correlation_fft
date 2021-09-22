@@ -11,7 +11,6 @@ def find_index(c):  # find index of maximum value
   return im
 
 m=np.loadtxt(sys.argv[1],delimiter=',')  # convert a csv file to a matrix from file sys.argv[1]
-
 mt=m.T #transpose matrix
 
 #computing cross-correlation by shift
