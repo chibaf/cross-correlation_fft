@@ -36,7 +36,7 @@ v1=mt[1][10000:15000];v2=mt[2][10000:15000]
 c=1.0/(np.linalg.norm(v1)*np.linalg.norm(v2)) 
 fft_len=13
 f1=np.fft.fft(v1)
-f2=np.fft.fft(v2)
+f2=np.conjugate(np.fft.fft(v2))
 ff=f1*f2
 corrf=np.real(np.fft.ifft(ff))*c
 #find max
